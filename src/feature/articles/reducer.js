@@ -29,11 +29,6 @@ function postsReducer(state = stateInit, action) {
     case type.ADD_NEW_POST:
       return {
         ...state,
-        posts: [...state.posts, ...action.payload],
-      };
-    case type.EDIT_POST:
-      return {
-        ...state,
         posts: [...state.posts, action.payload],
       };
     default:
